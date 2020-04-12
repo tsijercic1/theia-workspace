@@ -1,0 +1,9 @@
+{
+    "tasks":[
+        {
+            "label": "hello",
+            "type": "shell",
+            "command": "sleep 5s && echo \"Hello\""
+        }
+    ]
+}
