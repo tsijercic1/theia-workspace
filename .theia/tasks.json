@@ -3,8 +3,14 @@
         {
             "label": "hello",
             "type": "shell",
-            "command": "sleep 1s && echo \"Hello\"",
+            "command": "sleep 1s && echo ${env:USERNAME}",
             "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "clear && sleep 1s && gcc ${file}  -o ${relativeFileDirname}/${fileBasenameNoExtension} && ${relativeFileDirname}/${fileBasenameNoExtension} && rm ${relativeFileDirname}/${fileBasenameNoExtension}",
+            "problemMatcher":[]
         }
     ]
 }
